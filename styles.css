@@ -1,0 +1,81 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a background color and set font styles for the entire page */
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(to right, violet,skyblue,lightgreen); /* Gradient background */
+    padding-top: 30px; /* Adjust based on your navigation bar height */
+    text-align: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    color: #fff; /* Change text color to white */
+}
+
+/* Add some styling to the hamburger icon */
+.hamburger {
+    cursor: pointer;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 4;
+}
+
+/* Style the container */
+#home {
+    max-width: 800px;
+    margin: 50px auto;
+    background: linear-gradient(45deg, #1a1a1a, #333); /* Gradient background */
+    color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the heading */
+h1 {
+    color: goldenrod; /* Change heading color to gold */
+    font-size: 3em; /* Increase heading font size */
+    margin-bottom: 20px; /* Increase margin */
+    overflow: hidden; /* Hide overflow for typing animation */
+    white-space: nowrap; /* Keep the text in one line */
+    animation: typing 2s steps(40) 1s 1 normal both; /* Typing animation */
+}
+
+/* Typing animation keyframes */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Style the paragraphs */
+p {
+    font-size: 20px; /* Increase paragraph font size */
+    line-height: 1.8;
+    margin-bottom: 20px; /* Increase margin */
+}
+
+/* Add some styling to the About me paragraph */
+#home p:nth-child(4) {
+    font-weight: bold;
+    color: lightsalmon /* Change color to orange-red */
+}
+
+/* Style "Hey! I'm Akshaya" with larger font size */
+#home p:nth-child(2) {
+    font-size: 30px; /* Increase font size */
+    color: #007BFF; /* Change color to a bright blue */
+    margin-bottom: 10px; /* Adjust margin */
+}
+
+/* Style "Frontend Developer" with a slightly larger font size */
+#home p:nth-child(3) {
+    font-size: 26px; /* Increase font size */
+    color: darkcyan; /* Change color to a greenish tone */
+}

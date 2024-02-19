@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- INCLUDE JSCRIPT-->
+    <script src="script.js" defer></script>
+
+</head>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- HAMBURGER ICON-->
+    <div class="hamburger" onclick="toggleSidebar()">
+        &#9776; <!-- Unicode character for three horizontal lines (hamburger) -->
+    </div>
+
+    <!-- SIDEBAR -->
+    <nav class="w3-sidebar w3-white w3-animate-left" style="z-index:3;width:250px;display:none;" id="mySidebar">
+        <br>
+        <!-- DEV ICON -->
+        <div class="w3-container">
+            <a href="https://cdn-icons-png.flaticon.com/128/10777/10777541.png" title="Girl Developer">
+                <img src="https://cdn-icons-png.flaticon.com/128/10777/10777541.png" alt="Girl Developer" height="70">
+            </a> <br>
+            <!-- WELCOME NOTE -->
+            <p
+                style="font-size: 24px; font-weight: bold; background: linear-gradient(to right, red, blue); -webkit-background-clip: text; color: transparent;">
+                Welcome Dude!!</p>
+        </div>
+
+        <!-- SIDEMENU NAMES -->
+        <div class="w3-bar-block">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+            <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">
+                <i class="fas fa-home" style="margin-right: 25px;"></i> HOME
+            </a>
+
+            <a href="#skills" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fas fa-cogs" style="margin-right: 25px;"></i>SKILLS
+            </a>
+
+            <a href="#exp" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fas fa-briefcase" style="margin-right: 25px;"></i> EXPERIENCE
+            </a>
+
+            <a href="#projects" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fas fa-project-diagram" style="margin-right: 25px;"></i> PROJECTS
+            </a>
+
+            <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
+                <i class="fas fa-envelope" style="margin-right: 25px;"></i> CONTACT
+            </a>
+
+        </div>
+    </nav>
+
+    <div id="home" class="w3-container w3-padding-large">
+        <h1> Welcome to My Portfolio! </h1>
+        <p> Hey! I'm Akshaya </p>
+        <p> Frontend Developer </p>
+        <p> About me:</p>
+        <p> Enthusiastic Frontend Developer dedicated to creating clean and efficient code. 
+            Proven track record of contributing to impactful projects. 
+            Excited about continuous learning and expanding expertise in cutting-edge technologies. </p>
+        <!-- Add more content as needed -->
+    </div>
+
+   
+
+
+</body>
+
+</html>
