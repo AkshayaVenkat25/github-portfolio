@@ -21,43 +21,43 @@
     </div>
 
     <!-- SIDEBAR -->
-    <nav class="sidemenu" style="z-index:3;width:250px;display:none;" id="mySidebar">
-<br>
+    <nav class="w3-sidebar w3-white w3-animate-left" style="z-index:3;width:250px;display:none;" id="mySidebar">
+        <br>
         <!-- DEV ICON -->
-        <div class="container">
-            <a href="https://cdn-icons-png.flaticon.com/128/10777/10777541.png" title="Girl Developer">
-                <img src="https://cdn-icons-png.flaticon.com/128/10777/10777541.png" alt="Girl Developer" height="70">
+        <div class="w3-container">
+            <a href="assests\developer.gif" title="Girl Developer">
+                <img src="assests\developer.gif" alt="Girl Developer" height="70">
             </a> <br>
             <!-- WELCOME NOTE -->
             <p
-                style="font-size: 24px; font-weight: bold; background: linear-gradient(to right, red, blue);  color: transparent;">
+                style="font-size: 24px; font-weight: bold; background: linear-gradient(to right, red, red); -webkit-background-clip: text; color: transparent;">
                 Welcome Dude!!</p>
         </div>
 
         <!-- SIDEMENU NAMES -->
-        <div class="block">
+        <div class="w3-bar-block">
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
-            <a href="#home" onclick="w3_close()" class="sidemenu">
+            <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">
                 <i class="fas fa-home" style="margin-right: 25px;"></i> HOME
             </a>
-
-            <a href="#skills" onclick="w3_close()" class="sidemenu">
-                <i class="fas fa-cogs" style="margin-right: 25px;"></i>SKILLS
+            
+            <a href="#skills" onclick="navigateToSkills()" class="w3-bar-item w3-button w3-padding">
+                <i class="fas fa-cogs" style="margin-right: 25px;"></i> SKILLS
             </a>
-
-            <a href="#exp" onclick="w3_close()" class="sidemenu">
+            
+            <a href="#experience" onclick="navigateToExperience()" class="w3-bar-item w3-button w3-padding">
                 <i class="fas fa-briefcase" style="margin-right: 25px;"></i> EXPERIENCE
             </a>
-
-            <a href="#projects" onclick="w3_close()" class="sidemenu">
-                <i class="fas fa-project-diagram" style="margin-right: 25px;"></i> PROJECTS
+            
+            <a href="#projects" onclick="navigateToProjects()" class="w3-bar-item w3-button w3-padding">
+                <i class="fas fa-code" style="margin-right: 25px;"></i> PROJECTS
             </a>
-
-            <a href="#contact" onclick="w3_close()" class="sidemenu">
+            
+            <a href="#contact" onclick="navigateToContact()" class="w3-bar-item w3-button w3-padding">
                 <i class="fas fa-envelope" style="margin-right: 25px;"></i> CONTACT
             </a>
-
+            
         </div>
     </nav>
 
@@ -69,6 +69,232 @@
         <p> Enthusiastic Frontend Developer dedicated to creating clean and efficient code.
             Proven track record of contributing to impactful projects.
             Excited about continuous learning and expanding expertise in cutting-edge technologies. </p>
+        <!-- Add more content as needed -->
     </div>
+    <div>
+        <a id="resumeLink" href="https://drive.google.com/file/d/1axb46mXbSZVc4QnPaSS6ToJBTvzIrcnu/view?usp=drive_link"
+            target="_blank" style="display: none;"> RESUME </a>
+
+        <!-- Add the button structure for viewing and downloading the resume with an icon -->
+        <button id="resumeButton" class="btn btn-primary" onclick="navigateToResume()">
+            <img src="assests\recruitment.gif" alt="Resume Icon">
+            <!-- Replace 'resume-icon.png' with the actual path to your icon -->
+            RESUME
+        </button>
+    </div>
+
+    <!-- SKILLS SECTION -->
+
+    <div id="skills" class="w3-container w3-padding-large">
+        <h2>Skills</h2>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fab fa-angular"></i> <!-- Angular icon -->
+            </div>
+            <div class="skill-details">
+                <h3>Angular</h3>
+                <p>Modern web application framework</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fab fa-html5"></i> <!-- HTML icon -->
+            </div>
+            <div class="skill-details">
+                <h3>HTML</h3>
+                <p>Markup language for web pages</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fab fa-css3"></i> <!-- CSS icon -->
+            </div>
+            <div class="skill-details">
+                <h3>CSS</h3>
+                <p>Styling language for web pages</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fab fa-python"></i> <!-- Python icon -->
+            </div>
+            <div class="skill-details">
+                <h3>Python</h3>
+                <p>High-level programming language</p>
+            </div>
+        </div>
+
+        <div class="skill-card">
+            <div class="skill-icon">
+                <i class="fas fa-database"></i> <!-- SQL icon -->
+            </div>
+            <div class="skill-details">
+                <h3>SQL</h3>
+                <p>Structured Query Language for databases</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- EXPERIENCE SECTION -->
+    <div id="experience" class="w3-container w3-padding-large">
+        <h2>Experience</h2>
+    </div>
+
+    <div class="experience-box">
+        <div>
+            <i class="fas fa-laptop-code" style="font-size: xx-large; color: darkcyan;"></i>
+        </div>
+        <div>
+            <h1 style="font-size:30px; color:cyan; border-bottom: 2px solid cadetblue;">Programmer</h1>
+            <h3> iGold Technologies, Chennai </h3>
+            <p>During my internship, I acquired proficiency in <b>Python and JavaScript</b>,
+                concurrently gaining substantial experience in implementing
+                Data Structures and Algorithms (DSA) Concepts using <b>C++ programming.</b></p>
+            <!-- Add small icons for programming languages at the end with a gap -->
+            <i class="fab fa-python" style="font-size: x-large; color: skyblue; margin-right: 10px; "></i>
+            <i class="fab fa-js" style="font-size: x-large; color: #f0db4f; margin-right: 10px;"></i>
+            <i class="fab fa-cuttlefish" style="font-size: x-large; color: #00599c; margin-right: 10px;"></i>
+        </div>
+    </div>
+
+    <div class="experience-box">
+        <div>
+            <i class="fas fa-code" style="font-size: xx-large; color: darkcyan;"></i>
+        </div>
+        <div>
+            <h1 style="font-size:30px; color:cyan; border-bottom: 2px solid cadetblue;">Software Engineer</h1>
+            <h3> Visolve, Coimbatore </h3>
+            <p>In the Healthcare Domain, I have experience as a Full Stack Developer where
+                I utilized <b>HTML, CSS, and Angular</b> to handle Front-End tasks, and PHP
+                to manage Back-End functionalities.</p>
+            <!-- Add icons for programming languages at the end with a gap -->
+            <i class="fab fa-angular" style="font-size: x-large; color: red; margin-right: 10px;"></i>
+            <i class="fab fa-html5" style="font-size: x-large; color: orange; margin-right: 10px;"></i>
+            <i class="fab fa-css3" style="font-size: x-large; color: blue; margin-right: 10px;"></i>
+            <i class="fab fa-git" style="font-size: x-large; color: red; margin-right: 10px;"></i>
+            <i class="fab fa-php" style="font-size: x-large; color: purple; margin-right: 10px;"></i>
+        </div>
+    </div>
+    </div>
+
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div id="projects" class="w3-container w3-padding-large">
+        <h2>Projects</h2>
+
+        <!-- Project 1 -->
+        <div class="project-section">
+            <img src="assests\miniproj.png" alt="Project 1 Image" style="height: 200px;"><br>
+
+            <!-- Tech Stack Icons for Project 1 -->
+            <span>
+                <h3 style="color:goldenrod;font-weight: bold" ;> ONLINE UNUSED MEDICINE DONATION PORTAL FOR NGOs </h3>
+                <span>
+                    <h4> Web Development </h4>
+                    <div class="tech-stack-icons">
+                        <i class="fab fa-html5" title="HTML"
+                            style="font-size: x-large; color: red; margin-right: 10px;"></i>
+                        <i class="fab fa-css3" title="CSS"
+                            style="font-size: x-large; color: blue; margin-right: 10px;"></i>
+                        <i class="fab fa-js" title="JavaScript"
+                            style="font-size: x-large; color: yellow; margin-right: 10px;"></i>
+                        <!-- Add more icons as needed --><br>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-section">
+                        <img src="assests\chennai.png" alt="Project 1 Image" style="width: 390px;"><br>
+
+                        <!-- Tech Stack Icons for Project 1 -->
+                        <span>
+                            <h3 style="color:goldenrod;font-weight: bold" ;> EXPLORATORY ANALYSIS OF RAINFALL DATA IN
+                                INDIA FOR AGRICULTURE</h3>
+                            <span>
+                                <h4> Applied Data Science </h4>
+                                <div class="tech-stack-icons">
+                                    <i class="fab fa-python" title="Python"
+                                        style="font-size: x-large; color: darkblue; margin-right: 10px;"></i>
+
+                                    <!-- Add more icons as needed -->
+                                </div>
+
+                                <!-- Project 3 -->
+                                <div class="project-section">
+                                    <img src="assests\sih.png" alt="Project 1 Image"
+                                        style="height: 190px;"><br>
+
+                                    <!-- Tech Stack Icons for Project 3 -->
+                                    <span>
+                                        <h3 style="color:goldenrod;font-weight: bold" ;> GAMING APPS, etc., FOR THE ELDERLY (SIH FINAL 2022) </h3>
+                                        <span>
+                                            <h4> Mobile App Development</h4>
+                                            <img src="assests\flutter.png" alt="Project 3 Image">
+                                            
+
+                         <!-- Project 4 -->
+                                <div class="project-section">
+                                    <img src="assests\finalproj.png" alt="Project 4 Image"
+                                        style="height: 190px;"><br>
+
+                                    <!-- Tech Stack Icons for Project 3 -->
+                                    <span>
+                                        <h3 style="color:goldenrod;font-weight: bold" ;> EMOTION RECOGNITION USING ELECTROENCEPHALOGRAPHY (EEG) SIGNALS BY DEEP LEARNING TECHNIQUES </h3>
+                                        <span>
+                                            <h4> Deep Learning </h4>
+                                            <div class="tech-stack-icons">
+                                                <i class="fas fa-brain" title="Machine Learning/Deep Learning" style="font-size: x-large; color: blue; margin-right: 10px;"></i>
+                                                <!-- Add more machine learning/deep learning icons as needed -->
+                                            </div>
+                                            
+
+                                            
+                                            
+
+
+
+
+
+                                </div>
+
+
+
+                    </div>
+
+<!-- CONTACT SECTION -->
+<div id="contact" class="w3-container w3-padding-large">
+    <h2>Contact</h2>
+    <h1 style="color:darkslateblue; font-size: 29px;"> STAY CONNECTED...</h1></div>
+    
+    <h1 style="font-size: large;"><div class="social-icons">
+        <!-- Add links to your social media profiles -->
+        <a href="mailto:akshaya25venkat@gmail.com" target="_blank">
+            <i class="fas fa-envelope" style="color: #EA4335;"></i> <!-- Set color for Gmail icon -->
+        </a>
+        <a href="https://www.linkedin.com/in/akshaya-venkatraman-7a8ab3203/" target="_blank">
+            <i class="fab fa-linkedin" style="color: #0077B5;"></i> <!-- Set color for LinkedIn icon -->
+        </a>
+        <a href="https://github.com/AkshayaVenkat25" target="_blank">
+            <i class="fab fa-github" style="color: #181717;"></i> <!-- Set color for GitHub icon -->
+        </a>
+        <a href="https://t.me/AkshayaVenkatraman" target="_blank">
+            <i class="fab fa-telegram" style="color: #0088cc;"></i> <!-- Set color for Telegram icon -->
+        </a></h1>
+    
+    
+    </div>
+</div>
+<footer class="w3-container w3-padding-large">
+    <p>&copy; 2024 Akshaya Venkatraman. All Rights Reserved.</p>
+</footer>
+</div>
+
+
+
 </body>
+
 </html>
