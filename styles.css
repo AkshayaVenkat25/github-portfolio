@@ -79,3 +79,7 @@ p {
     font-size: 26px; /* Increase font size */
     color: darkcyan; /* Change color to a greenish tone */
 }
+
+#sidemenu{
+  background-color: linear-gradient(to right, red, blue);
+}
