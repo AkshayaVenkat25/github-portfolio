@@ -30,7 +30,7 @@
             </a> <br>
             <!-- WELCOME NOTE -->
             <p
-                style="font-size: 24px; font-weight: bold; background: linear-gradient(to right, red, red); -webkit-background-clip: text; color: transparent;">
+                style="font-size: 24px; font-weight: bold; background: linear-gradient(to bottom, red, darkblue); -webkit-background-clip: text; color: transparent;">
                 Welcome Dude!!</p>
         </div>
 
@@ -44,19 +44,19 @@
             </a>
 
             <a href="#skills" onclick="navigateToSkills()" class="w3-bar-item w3-button w3-padding">
-                <i class="fas fa-cogs" style="margin-right: 25px;"></i>     SKILLS
+                <i class="fas fa-cogs" style="margin-right: 25px;"></i>     <span>&nbsp;</span>SKILLS
             </a> 
 
             <a href="#experience" onclick="navigateToExperience()" class="w3-bar-item w3-button w3-padding">
-                <i class="fas fa-briefcase" style="margin-right: 25px;"></i>      EXPERIENCE
+                <i class="fas fa-briefcase" style="margin-right: 25px;"></i>     <span>&nbsp;</span>EXPERIENCE
             </a>
 
             <a href="#projects" onclick="navigateToProjects()" class="w3-bar-item w3-button w3-padding">
-                <i class="fas fa-code" style="margin-right: 25px;"></i>  PROJECTS
+                <i class="fas fa-code" style="margin-right: 25px;"></i>  <span>&nbsp;</span>PROJECTS
             </a>
 
             <a href="#contact" onclick="navigateToContact()" class="w3-bar-item w3-button w3-padding">
-                <i class="fas fa-envelope" style="margin-right: 25px;"></i>    CONTACT
+                <i class="fas fa-envelope" style="margin-right: 25px;"></i>    <span>&nbsp;</span>CONTACT
             </a>
 
         </div>
@@ -64,7 +64,7 @@
 
     <!-- HOME CONTENT -->
     <div id="home" class="w3-container w3-padding-large">
-        <h1 style="font-weight:400;"> Welcome to My Portfolio! </h1>
+        <h1 style="font-weight:400; "> Welcome to My Portfolio! </h1>
         <p> Hey! I'm Akshaya </p>
         <p> Frontend Developer </p>
         <p> About me:</p>
@@ -78,10 +78,8 @@
         <a id="resumeLink" href="https://drive.google.com/file/d/1axb46mXbSZVc4QnPaSS6ToJBTvzIrcnu/view?usp=drive_link"
             target="_blank" style="display: none;"> RESUME </a>
 
-        <!-- Add the button structure for viewing and downloading the resume with an icon -->
         <button id="resumeButton" class="btn btn-primary" onclick="navigateToResume()">
             <img src="assests\recruitment.gif" alt="Resume Icon">
-            <!-- Replace 'resume-icon.png' with the actual path to your icon -->
             RESUME
         </button>
     </div>
@@ -156,8 +154,8 @@
         <div>
             <h1 style="font-size:30px; color:cyan; border-bottom: 2px solid cadetblue;">Programmer</h1>
             <h3> iGold Technologies, Chennai </h3>
-            <p>During my internship, I acquired proficiency in <b>Python and JavaScript</b>,
-                concurrently gaining substantial experience in implementing
+            <p>During my Internship, I acquired proficiency in <b>Python and JavaScript</b>,
+                concurrently gaining substantial experience in Implementing
                 Data Structures and Algorithms (DSA) Concepts using <b>C++ programming.</b></p>
             <!-- TECH ICONS -->
             <i class="fab fa-python" style="font-size: x-large; color: skyblue; margin-right: 10px; "></i>
@@ -217,7 +215,7 @@
 
     <!-- Project 2 -->
     <div class="project-section">
-        <img src="assests\chennai.png" alt="Project 2 Image" style="width: 470px; height: 250px;"><br>
+        <img src="assests\chennai.png" alt="Project 2 Image" style=" height: 250px;"><br>
 
         <!-- TECH ICONS -->
         <span>
@@ -243,7 +241,7 @@
                     ELDERLY (SIH FINAL 2022) </h3>
                 <span>
                     <h4 style="font-weight: bolder;font-size:larger;"> Mobile App Development</h4>
-                    <img src="assests\flutter.png" alt="Project 3 Image">
+                    <img class="flutter" src="assests\flutter.png" alt="Project 3 Imagee">
                 </span>
             </span>
         </div>
@@ -301,12 +299,16 @@
     </h1>
     </div>
     </div>
+    
+   
 
     <!-- FOOTER -->
+    <div class="footer">
     <footer class="w3-container w3-padding-large">
         <p style="color:white">&copy; 2024 Akshaya Venkatraman. All Rights Reserved.</p>
     </footer>
     </div>
+
 </body>
 
 </html>

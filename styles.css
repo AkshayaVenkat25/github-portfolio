@@ -13,7 +13,6 @@ body {
     padding-top: 30px;
     text-align: center;
     margin: 20px;
-    font-family: Arial, sans-serif;
     color: #fff;
 }
 
@@ -29,7 +28,6 @@ body {
 }
 
 /* HOME CONTAINER */
-/* HOME CONTAINER */
 #home {
     max-width: 60%;
     margin: 50px auto;
@@ -43,12 +41,18 @@ body {
 
 /* ANIMATION FOR WELCOME */
 @keyframes typing {
-    from { width: 0; }
-    to { width: 100%; }
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
 }
 
 h1 {
     color: goldenrod;
+    max-width: 60;
     overflow: hidden;
     font-size: 3em;
     margin-bottom: 20px;
@@ -56,35 +60,12 @@ h1 {
     animation: typing 2s steps(40) 1s 1 normal both;
 }
 
-/* MEDIA QUERY FOR SMALL SCREENS */
-@media (max-width: 768px) {
-    #home {
-        max-width: 90%;
-    }
-
-    h1 {
-        font-size: 5px;
-        /* font-weight: bolder; */
-    }
-
-    /* Target the "Welcome to my portfolio!" text */
-    h1 span {
-        display: inline-block; /* Ensure the span is treated as a block element */
-        overflow: hidden;
-    }
-
-    p {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-}
-
 /* CENTER RESUME BUTTON IN MOBILE VIEW */
 #resumeButton {
-    /* Other styles */
+    font-weight: bolder;
     margin: 0 auto;
     display: block;
 }
-
 
 
 p {
@@ -108,32 +89,6 @@ p {
     font-size: 26px;
     color: darkcyan;
 }
-
-/* MEDIA QUERY FOR SMALL SCREENS */
-@media (max-width: 768px) {
-    #home {
-        max-width: 100%;
-    }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    p {
-        font-size: 16px; /* Adjust font size for smaller screens */
-    }
-
-    .w3-sidebar {
-        width: 250px; /* Set the sidebar width */
-    }
-
-    /* Adjust the position of the close button */
-    .w3-sidebar .close-btn {
-        top: 20px;
-        right: 20px;
-    }
-}
-
 
 /* SIDE MENUBAR */
 .w3-sidebar {
@@ -265,11 +220,6 @@ p {
 }
 
 /* EXPERIENCE SECTION */
-/* #experience {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
 
 #experience h2 {
     color: darkcyan;
@@ -314,14 +264,6 @@ p {
     /* Enlarge the box on hover */
 }
 
-/* MEDIA QUERY -----> EXPERIENCE SECTION  */
-@media (max-width: 768px) {
-    .experience-box {
-        width: 100%;
-    }
-
-}
-
 /* PROJECT SECTION */
 #projects h2 {
     color: darkcyan;
@@ -354,13 +296,7 @@ p {
     transform: scale(1.05);
 }
 
-/* MEDIA QUERY -----> PROJECT SECTION  */
-@media (max-width: 768px) {
-    .project-section {
-        width: 100%;
-    }
 
-}
 
 /* CONTACT SECTION  */
 #contact h2 {
@@ -409,4 +345,104 @@ p {
     width: 100%;
     color: #fff;
     padding: 10px;
+}
+
+/* MEDIA QUERY FOR SMALL SCREENS - GENERAL STYLES */
+@media (max-width: 768px) {
+    #home {
+        max-width: 90%;
+    }
+
+    #home h1 {
+        font-size: 25px;
+    }
+
+    h1 span {
+        display: inline-block;
+        overflow: hidden;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    .w3-sidebar {
+        width: 100%;
+    }
+
+    .w3-sidebar .close-btn {
+        top: 20px;
+        right: 20px;
+    }
+
+    #resumeButton {
+        font-size: 14px;
+    }
+
+
+
+    /* MEDIA QUERY FOR EXTRA SMALL SCREENS */
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    #resumeButton {
+        font-size: 12px;
+    }
+
+    .w3-sidebar .close-btn {
+        font-size: 20px;
+    }
+
+    .w3-sidebar {
+        width: 100%;
+    }
+
+
+    /* MEDIA QUERY FOR EXPERIENCE SECTION */
+
+    .experience-box {
+        width: 80%;
+        margin-right: 0;
+        height: 470px;
+    }
+
+    /* MEDIA QUERY FOR PROJECT SECTION */
+
+
+    .project-section {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .project-section h3 {
+        font-size: larger;
+    }
+
+    .project-section img {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-section .flutter {
+        width: 30px;
+        height: auto;
+    }
+
+    #contact h1 {
+        font-size: 400px;
+    }
+
+    .social-icons a {
+        font-size: 1.5em;
+    }
+
+
+    #footer p {
+        position: absolute;
+        right: 0;
+        width: auto;
+        margin-bottom:10px;
+    }
 }
