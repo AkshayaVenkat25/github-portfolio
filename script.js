@@ -13,14 +13,14 @@ function w3_close() {
 
 // RESUME NAVIGATION
 function navigateToResume() {
-   var resumeLink = document.getElementById('resumeLink').href;
+    var resumeLink = document.getElementById('resumeLink').href;
     window.open(resumeLink, '_blank');
 }
 
 // SKILLS
 function navigateToSkills() {
-      var skillsSectionOffsetTop = document.getElementById('skills').offsetTop;
-      window.scrollTo({
+    var skillsSectionOffsetTop = document.getElementById('skills').offsetTop;
+    window.scrollTo({
         top: skillsSectionOffsetTop,
         behavior: 'smooth'
     });
