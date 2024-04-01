@@ -347,7 +347,7 @@ p {
     padding: 10px;
 }
 
-/* MEDIA QUERY FOR SMALL SCREENS - GENERAL STYLES */
+/* MEDIA QUERY FOR SMALL SCREENS */
 @media (max-width: 768px) {
     #home {
         max-width: 90%;
@@ -379,10 +379,6 @@ p {
         font-size: 14px;
     }
 
-
-
-    /* MEDIA QUERY FOR EXTRA SMALL SCREENS */
-
     h1 {
         font-size: 1.5em;
     }
@@ -401,7 +397,6 @@ p {
 
 
     /* MEDIA QUERY FOR EXPERIENCE SECTION */
-
     .experience-box {
         width: 80%;
         margin-right: 0;
@@ -409,8 +404,6 @@ p {
     }
 
     /* MEDIA QUERY FOR PROJECT SECTION */
-
-
     .project-section {
         width: 90%;
         margin-right: 0;
@@ -430,6 +423,7 @@ p {
         height: auto;
     }
 
+    /* MEDIA QUERY FOR CONTACT SECTION */
     #contact h1 {
         font-size: 400px;
     }
@@ -443,6 +437,6 @@ p {
         position: absolute;
         right: 0;
         width: auto;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
 }
